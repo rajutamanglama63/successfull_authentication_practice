@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="form-container">
+        <div class="form-heading">
+            <h2>Register</h2>
+        </div>
+        <%- include('./partials/messages'); %>
+        <form action="/users/register" method="POST">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Username</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="choose username" name="username" value="<%= typeof username != 'undefined' ? username : '' %>" />
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email" value="<%= typeof email != 'undefined' ? email : '' %>" />
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Password</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="enter password" name="password" value="<%= typeof password != 'undefined' ? password : '' %>" />
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Conform Password</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="conform your password" name="conformPassword" value="<%= typeof conformPassword != 'undefined' ? conformPassword : '' %>" />
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary register-btn">Register</button>
+            </div>
+            <div class="mb-3">
+                <p>Aready have an account? <a href="/users/login" class="plane-link">Login</a></p>
+            </div>
+        </form>
+    </div>
+</div>

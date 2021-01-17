@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Port Lligat Slab", serif;
+}
+
+/* welcome page */
+main {
+  background-image: url("https://images.pexels.com/photos/583846/pexels-photo-583846.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.card-container {
+  padding-top: 15rem;
+  margin: 0 auto;
+  width: 30%;
+}
+
+/* Register Page */
+.form-container {
+  margin: 0 auto;
+  width: 50%;
+}
+.form-heading {
+  margin: 2rem 0;
+  text-align: center;
+}
+.form-heading > h2 {
+  color: rebeccapurple;
+}
+.register-btn {
+  width: 100%;
+}
+.plane-link {
+  text-decoration: none;
+}
+.plane-link:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  color: rebeccapurple;
+}
+/* dashbord page */
+
+nav {
+  background-color: rgb(105, 4, 236);
+  height: 3rem;
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+}
+.page-info {
+  display: flex;
+  justify-content: space-between;
+}
+.page-logo {
+  margin: 0.5rem 0;
+  color: aliceblue;
+}
+.specific-user {
+  padding: 1rem;
+  color: aliceblue;
+}
+.logout-link {
+  padding: 1rem;
+}
+.logout {
+  color: aliceblue;
+  padding: 0.3rem;
+  text-decoration: none;
+  background-color: rgb(1, 129, 180);
+  border-radius: 5px;
+}
+.logout:hover {
+  color: rgb(39, 39, 39);
+  background-color: rgb(66, 200, 253);
+  text-decoration: none;
+}
